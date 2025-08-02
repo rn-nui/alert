@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@nui/alert": ["./src/index"]
+      "@rn-nui/alert": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

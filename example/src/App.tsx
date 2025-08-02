@@ -1,5 +1,5 @@
 import { Text, View, StyleSheet, Pressable } from 'react-native';
-import Alert from '@nui/alert';
+import Alert from '@rn-nui/alert';
 
 // Button component for consistent styling
 function AlertButton({

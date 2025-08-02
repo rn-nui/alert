@@ -1,17 +1,17 @@
-# @nui/alert
+# @rn-nui/alert
 
 Native alerts for React Native with enhanced functionality and cross-platform support.
 
 ## Installation
 
 ```bash
-npm install @nui/alert
+npm install @rn-nui/alert
 ```
 
 or
 
 ```bash
-yarn add @nui/alert
+yarn add @rn-nui/alert
 ```
 
 ### iOS Setup
@@ -52,7 +52,7 @@ Alert.alert('Title', 'Message', buttons, { icon: 'base_cookie_24' });
 ## Usage
 
 ```typescript
-import Alert from '@nui/alert';
+import Alert from '@rn-nui/alert';
 
 // Basic alert
 Alert.alert('Title', 'Message');

@@ -19,11 +19,11 @@ module.exports = {
     ...config.resolver,
     // Include the parent directory so Metro can find the main package
     extraNodeModules: {
-      '@nui/alert': root,
+      '@rn-nui/alert': root,
     },
     // Resolve source files from the main package
     resolveRequest: (context, moduleName, platform) => {
-      if (moduleName === '@nui/alert') {
+      if (moduleName === '@rn-nui/alert') {
         return {
           filePath: path.join(root, 'src', 'index.tsx'),
           type: 'sourceFile',

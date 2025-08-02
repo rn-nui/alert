@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Native alerts",
   "main": "./lib/module/index.js",
+  "private": false,
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
     ".": {
@@ -32,7 +33,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace @nui/alert-example",
+    "example": "yarn workspace @rn-nui/alert-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",

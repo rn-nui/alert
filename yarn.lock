@@ -2329,9 +2329,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nui/alert-example@workspace:example":
+"@rn-nui/alert-example@workspace:example":
   version: 0.0.0-use.local
-  resolution: "@nui/alert-example@workspace:example"
+  resolution: "@rn-nui/alert-example@workspace:example"
   dependencies:
     "@babel/core": ^7.25.2
     "@babel/preset-env": ^7.25.3
