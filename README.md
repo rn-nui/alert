@@ -121,13 +121,9 @@ Alert.alert(
 
 #### Video Examples
 
-**iOS:**
-
-<video src="./videos/ios-alert.mp4" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
-
-**Android:**
-
-<video src="./videos/android-alert.mov" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
+| iOS                                                         | Android                                                         |
+| ----------------------------------------------------------- | --------------------------------------------------------------- |
+| <video src="./videos/ios-alert.mp4" controls width="400" /> | <video src="./videos/android-alert.mov" controls width="400" /> |
 
 ---
 
@@ -229,13 +225,9 @@ Alert.prompt(
 
 #### Video Examples
 
-**iOS:**
-
-<video src="./videos/ios-prompt.mp4" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
-
-**Android:**
-
-<video src="./videos/android-prompt.mov" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
+| iOS                                                          | Android                                                          |
+| ------------------------------------------------------------ | ---------------------------------------------------------------- |
+| <video src="./videos/ios-prompt.mp4" controls width="400" /> | <video src="./videos/android-prompt.mov" controls width="400" /> |
 
 ---
 
@@ -302,13 +294,9 @@ Alert.items(
 
 #### Video Examples
 
-**iOS:**
-
-<video src="./videos/ios-items.mp4" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
-
-**Android:**
-
-<video src="./videos/android-items.mov" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
+| iOS                                                         | Android                                                         |
+| ----------------------------------------------------------- | --------------------------------------------------------------- |
+| <video src="./videos/ios-items.mp4" controls width="400" /> | <video src="./videos/android-items.mov" controls width="400" /> |
 
 ---
 
@@ -371,9 +359,9 @@ Alert.singleChoice(
 
 #### Video Examples
 
-**Android:**
-
-<video src="./videos/android-single-item.mov" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
+| Android                                                               |
+| --------------------------------------------------------------------- |
+| <video src="./videos/android-single-item.mov" controls width="400" /> |
 
 ---
 
@@ -442,6 +430,6 @@ Alert.multiChoice(
 
 #### Video Examples
 
-**Android:**
-
-<video src="./videos/android-multi-item.mov" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
+| Android                                                              |
+| -------------------------------------------------------------------- |
+| <video src="./videos/android-multi-item.mov" controls width="400" /> |
