@@ -115,6 +115,9 @@ export type ReturnValue = string | { login: string; password: string };
 export type PromptOptions = AlertOptions & {
   /** @platform android */
   onDismiss?: (value: ReturnValue) => void;
+
+  /** @platform android */
+  placeholder?: string;
 };
 
 export type AlertButton = Omit<RNAlertButton, 'onPress'> & {

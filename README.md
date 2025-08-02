@@ -123,11 +123,11 @@ Alert.alert(
 
 **iOS:**
 
-<!-- Add iOS video example here -->
+<video src="./videos/ios-alert.mp4" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
 
 **Android:**
 
-<!-- Add Android video example here -->
+<video src="./videos/android-alert.mov" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
 
 ---
 
@@ -149,12 +149,13 @@ Display a prompt dialog with text input capabilities.
 
 #### PromptButton Properties
 
-| Property   | Type                                     | Platform | Description                                                                                             |
-| ---------- | ---------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------- |
-| `text`     | `string`                                 | Both     | Text displayed on the button                                                                            |
-| `style`    | `'default' \| 'cancel' \| 'destructive'` | Both     | Visual style - `destructive` shows red text, `cancel` shows as cancel button, `default` is normal style |
-| `position` | `'neutral' \| 'negative' \| 'positive'`  | Android  | Position to place the button at the bottom of the alert                                                 |
-| `onPress`  | `(value: ReturnValue) => void`           | Both     | Function called when button is tapped, receives the entered text/credentials                            |
+| Property      | Type                                     | Platform | Description                                                                                             |
+| ------------- | ---------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------- |
+| `text`        | `string`                                 | Both     | Text displayed on the button                                                                            |
+| `style`       | `'default' \| 'cancel' \| 'destructive'` | Both     | Visual style - `destructive` shows red text, `cancel` shows as cancel button, `default` is normal style |
+| `position`    | `'neutral' \| 'negative' \| 'positive'`  | Android  | Position to place the button at the bottom of the alert                                                 |
+| `placeholder` | `string`                                 | Android  | Hint text shown in empty input fields                                                                   |
+| `onPress`     | `(value: ReturnValue) => void`           | Both     | Function called when button is tapped, receives the entered text/credentials                            |
 
 #### PromptType Options
 
@@ -230,11 +231,11 @@ Alert.prompt(
 
 **iOS:**
 
-<!-- Add iOS video example here -->
+<video src="./videos/ios-prompt.mp4" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
 
 **Android:**
 
-<!-- Add Android video example here -->
+<video src="./videos/android-prompt.mov" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
 
 ---
 
@@ -303,11 +304,11 @@ Alert.items(
 
 **iOS:**
 
-<!-- Add iOS video example here -->
+<video src="./videos/ios-items.mp4" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
 
 **Android:**
 
-<!-- Add Android video example here -->
+<video src="./videos/android-items.mov" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
 
 ---
 
@@ -372,7 +373,7 @@ Alert.singleChoice(
 
 **Android:**
 
-<!-- Add Android video example here -->
+<video src="./videos/android-single-item.mov" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
 
 ---
 
@@ -443,4 +444,4 @@ Alert.multiChoice(
 
 **Android:**
 
-<!-- Add Android video example here -->
+<video src="./videos/android-multi-item.mov" controls style="width: 100%; max-width: 400px; border-radius: 12px; margin-bottom: 20px;" />
