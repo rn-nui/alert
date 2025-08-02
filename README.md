@@ -120,10 +120,12 @@ Alert.alert(
 ```
 
 #### Video Examples
+iOS
+https://github.com/user-attachments/assets/13d06f0c-1af2-48d5-8b88-347d1807dff0
 
-| iOS                                                         | Android                                                         |
-| ----------------------------------------------------------- | --------------------------------------------------------------- |
-| https://github.com/user-attachments/assets/13d06f0c-1af2-48d5-8b88-347d1807dff0 | https://github.com/user-attachments/assets/b7b46310-aad4-481f-bead-f43939173ad9|
+Android
+https://github.com/user-attachments/assets/b7b46310-aad4-481f-bead-f43939173ad9
+
 
 ---
 
