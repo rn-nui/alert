@@ -124,7 +124,7 @@ function ItemsAlertButton() {
             headerAlignment: 'left',
             cancelable: true,
             onDismiss: () => console.log('Dismissed'),
-            presentation: 'alert',
+            presentation: 'sheet',
             cancelButtonText: 'Close',
             message: 'This is a message',
           }

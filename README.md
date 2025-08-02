@@ -119,13 +119,11 @@ Alert.alert(
 );
 ```
 
-#### Video Examples
-iOS
-https://github.com/user-attachments/assets/13d06f0c-1af2-48d5-8b88-347d1807dff0
+#### Screenshots
 
-Android
-https://github.com/user-attachments/assets/b7b46310-aad4-481f-bead-f43939173ad9
-
+| iOS                                                   | Android                                                   |
+| ----------------------------------------------------- | --------------------------------------------------------- |
+| <img src="./screenshots/ios-alert.png" width="360" /> | <img src="./screenshots/android-alert.png" width="360" /> |
 
 ---
 
@@ -225,11 +223,11 @@ Alert.prompt(
 );
 ```
 
-#### Video Examples
+#### Screenshots
 
-| iOS                                                          | Android                                                          |
-| ------------------------------------------------------------ | ---------------------------------------------------------------- |
-|https://github.com/user-attachments/assets/4ddb9bd3-3ffb-434a-9836-4f297c144270| https://github.com/user-attachments/assets/38c050d4-be1c-4bc0-b4ff-5ab87c328802|
+| iOS                                                    | Android                                                    |
+| ------------------------------------------------------ | ---------------------------------------------------------- |
+| <img src="./screenshots/ios-prompt.png" width="360" /> | <img src="./screenshots/android-prompt.png" width="360" /> |
 
 ---
 
@@ -294,11 +292,11 @@ Alert.items(
 );
 ```
 
-#### Video Examples
+#### Screenshots
 
-| iOS                                                         | Android                                                         |
-| ----------------------------------------------------------- | --------------------------------------------------------------- |
-|https://github.com/user-attachments/assets/ae929049-7d8b-4c10-86fe-60ff854d7d8f| https://github.com/user-attachments/assets/015f9f21-537f-40e8-9be7-a51dd76da70b|
+| iOS (alert)                                           | iOS (sheet)                                                 | Android                                                   |
+| ----------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------- |
+| <img src="./screenshots/ios-items.png" width="360" /> | <img src="./screenshots/ios-items-sheet.png" width="360" /> | <img src="./screenshots/android-items.png" width="360" /> |
 
 ---
 
@@ -359,11 +357,11 @@ Alert.singleChoice(
 );
 ```
 
-#### Video Examples
+#### Screenshots
 
-| Android                                                               |
-| --------------------------------------------------------------------- |
-|https://github.com/user-attachments/assets/c0fe86e0-b33b-4e1d-bf0f-ed8172305ae5|
+| Android                                                           |
+| ----------------------------------------------------------------- |
+| <img src="./screenshots/android-single-choice.png" width="360" /> |
 
 ---
 
@@ -430,8 +428,8 @@ Alert.multiChoice(
 );
 ```
 
-#### Video Examples
+#### Screenshots
 
-| Android                                                              |
-| -------------------------------------------------------------------- |
-| https://github.com/user-attachments/assets/1cc0ca39-c39c-4c62-9950-0813e0a355e7|
+| Android                                                          |
+| ---------------------------------------------------------------- |
+| <img src="./screenshots/android-multi-choice.png" width="360" /> |
