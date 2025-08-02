@@ -1,5 +1,6 @@
 package com.nui.alert
 
+import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import com.facebook.react.bridge.Callback
@@ -19,7 +20,7 @@ class AlertModule(reactContext: ReactApplicationContext) :
   }
 
   private inner class Helper(private val fragmentManager: FragmentManager) {
-    private var alertToShow: NUIAlert? = null
+    private var alertToShow: DialogFragment? = null
 
     fun showPendingAlert() {
       UiThreadUtil.assertOnUiThread()
@@ -39,21 +40,33 @@ class AlertModule(reactContext: ReactApplicationContext) :
       }
     }
 
-    fun showNewAlert(arguments: ReadableMap, actionCallback: Callback?) {
+    fun showNewAlert(arguments: ReadableMap, actionCallback: Callback, type: String) {
       UiThreadUtil.assertOnUiThread()
 
       dismissExisting()
 
-      val actionListener =
-        if (actionCallback != null) NUIAlertListener(actionCallback, reactApplicationContext) else null
-
-      val options = AlertOptions(arguments)
-      val nuiAlert = NUIAlert(options, actionListener)
+      val alert = when (type) {
+        "prompt" -> {
+          NUIPrompt(arguments, actionCallback, reactApplicationContext)
+        }
+        "items" -> {
+          NUIItems(arguments, actionCallback, reactApplicationContext)
+        }
+        "singleChoice" -> {
+          NUISingleChoice(arguments, actionCallback, reactApplicationContext)
+        }
+        "multiChoice" -> {
+          NUIMultiChoice(arguments, actionCallback, reactApplicationContext)
+        }
+        else -> {
+          NUIAlert(arguments, actionCallback, reactApplicationContext)
+        }
+      }
 
       if (isInForeground && !fragmentManager.isStateSaved) {
-        nuiAlert.show(fragmentManager, FRAGMENT_TAG)
+        alert.show(fragmentManager, FRAGMENT_TAG)
       } else {
-        alertToShow = nuiAlert
+        alertToShow = alert
       }
     }
   }
@@ -80,7 +93,47 @@ class AlertModule(reactContext: ReactApplicationContext) :
       return
     }
 
-    UiThreadUtil.runOnUiThread { fragmentManagerHelper.showNewAlert(options, actionCallback) }
+    UiThreadUtil.runOnUiThread { fragmentManagerHelper.showNewAlert(options, actionCallback, "alert") }
+  }
+
+  override fun prompt(options: ReadableMap, actionCallback: Callback, errorCallback: Callback) {
+    val fragmentManagerHelper = this.fragmentManagerHelper
+    if (fragmentManagerHelper == null) {
+      errorCallback.invoke("Tried to show an alert while not attached to an Activity")
+      return
+    }
+
+    UiThreadUtil.runOnUiThread { fragmentManagerHelper.showNewAlert(options, actionCallback, "prompt") }
+  }
+
+  override fun items(options: ReadableMap, actionCallback: Callback, errorCallback: Callback) {
+    val fragmentManagerHelper = this.fragmentManagerHelper
+    if (fragmentManagerHelper == null) {
+      errorCallback.invoke("Tried to show an alert while not attached to an Activity")
+      return
+    }
+
+    UiThreadUtil.runOnUiThread { fragmentManagerHelper.showNewAlert(options, actionCallback, "items") }
+  }
+
+  override fun singleChoice(options: ReadableMap, actionCallback: Callback, errorCallback: Callback) {
+    val fragmentManagerHelper = this.fragmentManagerHelper
+    if (fragmentManagerHelper == null) {
+      errorCallback.invoke("Tried to show an alert while not attached to an Activity")
+      return
+    }
+
+    UiThreadUtil.runOnUiThread { fragmentManagerHelper.showNewAlert(options, actionCallback, "singleChoice") }
+  }
+
+  override fun multiChoice(options: ReadableMap, actionCallback: Callback, errorCallback: Callback) {
+    val fragmentManagerHelper = this.fragmentManagerHelper
+    if (fragmentManagerHelper == null) {
+      errorCallback.invoke("Tried to show an alert while not attached to an Activity")
+      return
+    }
+
+    UiThreadUtil.runOnUiThread { fragmentManagerHelper.showNewAlert(options, actionCallback, "multiChoice") }
   }
 
   private val fragmentManagerHelper: Helper?

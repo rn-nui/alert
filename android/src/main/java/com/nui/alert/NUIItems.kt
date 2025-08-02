@@ -10,9 +10,9 @@ import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReadableMap
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
-class NUIAlert : DialogFragment, DialogInterface.OnClickListener {
-  private val listener: NUIAlertListener?
-  private val options: AlertOptions?
+class NUIItems : DialogFragment, DialogInterface.OnClickListener {
+  private val listener: NUIItemsListener?
+  private val options: ItemsOptions?
 
   constructor() {
     listener = null
@@ -20,8 +20,8 @@ class NUIAlert : DialogFragment, DialogInterface.OnClickListener {
   }
 
   internal constructor(arguments: ReadableMap, callback: Callback, reactApplicationContext: ReactApplicationContext) {
-    this.listener = NUIAlertListener(callback, reactApplicationContext)
-    this.options = AlertOptions(arguments)
+    this.listener = NUIItemsListener(callback, reactApplicationContext)
+    this.options = ItemsOptions(arguments)
   }
 
   override fun onCreateDialog(savedInstanceState: Bundle?): Dialog =
@@ -48,31 +48,16 @@ class NUIAlert : DialogFragment, DialogInterface.OnClickListener {
       builder.setTitle(options.title)
     }
 
-    if (options.message.isNotEmpty()) {
-      builder.setMessage(options.message)
+    if (options.isCancelable) {
+      builder.setPositiveButton(options.cancelButtonText, this.listener)
     }
 
-    if (options.positiveButtonText.isNotEmpty()) {
-      builder.setPositiveButton(options.positiveButtonText, listener)
-    }
-
-    if (options.negativeButtonText.isNotEmpty()) {
-      builder.setNegativeButton(options.negativeButtonText, listener)
-    }
-
-    if (options.neutralButtonText.isNotEmpty()) {
-      builder.setNeutralButton(options.neutralButtonText, listener)
-    }
-
-    if (!options.icon.isNullOrBlank()) {
-      builder.setIcon(IconFinder(requireContext()).getId(options.icon!!))
-    }
-
+    builder.setItems(options.items, this.listener)
     return builder.create()
   }
 }
 
-internal class NUIAlertListener(private val callback: Callback, private val reactContext: ReactApplicationContext) :
+internal class NUIItemsListener(private val callback: Callback, private val reactContext: ReactApplicationContext) :
   DialogInterface.OnClickListener, DialogInterface.OnDismissListener {
 
   private var callbackConsumed = false
@@ -80,12 +65,12 @@ internal class NUIAlertListener(private val callback: Callback, private val reac
   override fun onClick(dialog: DialogInterface, which: Int) {
     if (!callbackConsumed) {
       if (reactContext.hasActiveReactInstance()) {
-        when (which) {
-          DialogInterface.BUTTON_POSITIVE -> callback.invoke("positive")
-          DialogInterface.BUTTON_NEGATIVE -> callback.invoke("negative")
-          DialogInterface.BUTTON_NEUTRAL -> callback.invoke("neutral")
-        }
 
+        if (which >= 0) {
+          callback.invoke(which)
+        } else {
+          callback.invoke("dismissed")
+        }
         callbackConsumed = true
       }
     }

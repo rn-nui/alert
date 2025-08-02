@@ -1,4 +1,4 @@
-import type { AlertButton, AlertOptions } from '.';
+import type { AlertButton, AlertOptions } from './Alert';
 import NativeAlert from './NativeAlert';
 
 type NUIAlertOptions = AlertOptions & {
@@ -37,7 +37,7 @@ export class NUIAlert {
     );
   }
 
-  callback(pressed: string) {
+  private callback(pressed: string) {
     if (pressed === 'dismissed') {
       this.options.onDismiss?.();
     } else if (pressed === 'positive') {
@@ -49,7 +49,7 @@ export class NUIAlert {
     }
   }
 
-  error() {}
+  private error() {}
 }
 
 function findButtonByPosition(
