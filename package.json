@@ -1,5 +1,5 @@
 {
-  "name": "@nui/alert",
+  "name": "@rn-nui/alert",
   "version": "0.1.0",
   "description": "Native alerts",
   "main": "./lib/module/index.js",
@@ -38,7 +38,7 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
-    "release": "release-it --only-version"
+    "release": "release-it -only-version"
   },
   "keywords": [
     "react-native",
@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sidorchukandrew/alert.git"
+    "url": "git+https://github.com/rn-nui/alert.git"
   },
   "author": "Andrew Sidorchuk <sidorchukandrew@gmail.com> (https://github.com/sidorchukandrew)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sidorchukandrew/alert/issues"
+    "url": "https://github.com/rn-nui/alert/issues"
   },
-  "homepage": "https://github.com/sidorchukandrew/alert#readme",
+  "homepage": "https://github.com/rn-nui/alert#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
