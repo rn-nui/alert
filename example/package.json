@@ -1,5 +1,5 @@
 {
-  "name": "@nui/alert-example",
+  "name": "@rn-nui/alert-example",
   "version": "0.0.1",
   "scripts": {
     "android": "react-native run-android",
