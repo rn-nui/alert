@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sidorchukandrew/nui-alert.git"
+    "url": "git+https://github.com/sidorchukandrew/alert.git"
   },
   "author": "Andrew Sidorchuk <sidorchukandrew@gmail.com> (https://github.com/sidorchukandrew)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sidorchukandrew/nui-alert/issues"
+    "url": "https://github.com/sidorchukandrew/alert/issues"
   },
-  "homepage": "https://github.com/sidorchukandrew/nui-alert#readme",
+  "homepage": "https://github.com/sidorchukandrew/alert#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
