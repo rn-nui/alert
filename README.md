@@ -123,7 +123,7 @@ Alert.alert(
 
 | iOS                                                         | Android                                                         |
 | ----------------------------------------------------------- | --------------------------------------------------------------- |
-| <video src="./videos/ios-alert.mp4" controls width="400" /> | <video src="./videos/android-alert.mov" controls width="400" /> |
+| https://github.com/user-attachments/assets/13d06f0c-1af2-48d5-8b88-347d1807dff0 | https://github.com/user-attachments/assets/b7b46310-aad4-481f-bead-f43939173ad9|
 
 ---
 
@@ -227,7 +227,7 @@ Alert.prompt(
 
 | iOS                                                          | Android                                                          |
 | ------------------------------------------------------------ | ---------------------------------------------------------------- |
-| <video src="./videos/ios-prompt.mp4" controls width="400" /> | <video src="./videos/android-prompt.mov" controls width="400" /> |
+|https://github.com/user-attachments/assets/4ddb9bd3-3ffb-434a-9836-4f297c144270| https://github.com/user-attachments/assets/38c050d4-be1c-4bc0-b4ff-5ab87c328802|
 
 ---
 
@@ -296,7 +296,7 @@ Alert.items(
 
 | iOS                                                         | Android                                                         |
 | ----------------------------------------------------------- | --------------------------------------------------------------- |
-| <video src="./videos/ios-items.mp4" controls width="400" /> | <video src="./videos/android-items.mov" controls width="400" /> |
+|https://github.com/user-attachments/assets/ae929049-7d8b-4c10-86fe-60ff854d7d8f| https://github.com/user-attachments/assets/015f9f21-537f-40e8-9be7-a51dd76da70b|
 
 ---
 
@@ -361,7 +361,7 @@ Alert.singleChoice(
 
 | Android                                                               |
 | --------------------------------------------------------------------- |
-| <video src="./videos/android-single-item.mov" controls width="400" /> |
+|https://github.com/user-attachments/assets/c0fe86e0-b33b-4e1d-bf0f-ed8172305ae5|
 
 ---
 
@@ -432,4 +432,4 @@ Alert.multiChoice(
 
 | Android                                                              |
 | -------------------------------------------------------------------- |
-| <video src="./videos/android-multi-item.mov" controls width="400" /> |
+| https://github.com/user-attachments/assets/1cc0ca39-c39c-4c62-9950-0813e0a355e7|
