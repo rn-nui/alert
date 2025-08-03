@@ -25,25 +25,12 @@ class AlertModule(reactContext: ReactApplicationContext) :
     fun showPendingAlert() {
       UiThreadUtil.assertOnUiThread()
       val alertToShow = alertToShow ?: return
-      dismissExisting()
       alertToShow.show(fragmentManager, FRAGMENT_TAG)
       this.alertToShow = null
     }
 
-    fun dismissExisting() {
-      if (!isInForeground) {
-        return
-      }
-      val oldFragment = fragmentManager.findFragmentByTag(FRAGMENT_TAG) as NUIAlert?
-      if (oldFragment?.isResumed == true) {
-        oldFragment.dismiss()
-      }
-    }
-
     fun showNewAlert(arguments: ReadableMap, actionCallback: Callback, type: String) {
       UiThreadUtil.assertOnUiThread()
-
-      dismissExisting()
 
       val alert = when (type) {
         "prompt" -> {

@@ -2329,26 +2329,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nui/alert-example@workspace:example":
-  version: 0.0.0-use.local
-  resolution: "@nui/alert-example@workspace:example"
-  dependencies:
-    "@babel/core": ^7.25.2
-    "@babel/preset-env": ^7.25.3
-    "@babel/runtime": ^7.25.0
-    "@react-native-community/cli": 18.0.0
-    "@react-native-community/cli-platform-android": 18.0.0
-    "@react-native-community/cli-platform-ios": 18.0.0
-    "@react-native/babel-preset": 0.79.2
-    "@react-native/metro-config": 0.79.2
-    "@react-native/typescript-config": 0.79.2
-    "@types/react": ^19.0.0
-    react: 19.0.0
-    react-native: 0.79.2
-    react-native-builder-bob: ^0.40.13
-  languageName: unknown
-  linkType: soft
-
 "@octokit/auth-token@npm:^4.0.0":
   version: 4.0.0
   resolution: "@octokit/auth-token@npm:4.0.0"
@@ -3108,6 +3088,26 @@ __metadata:
   checksum: fbe17cc1d83abd616fa1b02b3c52d964ba6bdc7e5d91984f5bd1aebcdde390b9d7d0e8e3d916dce64f658058429f65a92196d1c978018bb35973e15419272e65
   languageName: node
   linkType: hard
+
+"@rn-nui/alert-example@workspace:example":
+  version: 0.0.0-use.local
+  resolution: "@rn-nui/alert-example@workspace:example"
+  dependencies:
+    "@babel/core": ^7.25.2
+    "@babel/preset-env": ^7.25.3
+    "@babel/runtime": ^7.25.0
+    "@react-native-community/cli": 18.0.0
+    "@react-native-community/cli-platform-android": 18.0.0
+    "@react-native-community/cli-platform-ios": 18.0.0
+    "@react-native/babel-preset": 0.79.2
+    "@react-native/metro-config": 0.79.2
+    "@react-native/typescript-config": 0.79.2
+    "@types/react": ^19.0.0
+    react: 19.0.0
+    react-native: 0.79.2
+    react-native-builder-bob: ^0.40.13
+  languageName: unknown
+  linkType: soft
 
 "@rn-nui/alert@workspace:.":
   version: 0.0.0-use.local
