@@ -1,3 +1,6 @@
+<img height="1500px" alt="cover" src="https://github.com/user-attachments/assets/42d59ffe-97fc-450f-ac8e-06e7bf153f06" />
+
+
 # @rn-nui/alert
 
 Native alerts for React Native with enhanced functionality and cross-platform support.
